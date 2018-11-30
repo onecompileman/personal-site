@@ -1,0 +1,19 @@
+.skills-page-container {
+    min-height: 100vh;
+}
+
+.skills-header {
+    padding: 30px;
+    width: 100%;
+    background-color: #232325;
+    color: white;
+    text-align: center; 
+}
+
+.skills-body {
+    margin-top: 50px;
+}
+
+.progress-bar {
+    background-color: #EDAD2A !important;
+}

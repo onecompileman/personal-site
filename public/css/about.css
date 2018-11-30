@@ -1,0 +1,100 @@
+.about-me-container {
+    display: block;
+    min-height: 100vh;
+}
+
+.profile-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.who-am-i {
+    background-color: #232325;
+    display: block;
+    height: 30%;
+    width: 100%;
+    color: white;
+    padding: 20px 20px 0 20px;
+}
+
+.who-am-i-text-container {
+    margin-top: 50px;
+}
+
+.who-am-i-description {
+    margin-top: 50px;
+}
+
+.who-am-i-description li {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.who-am-i-description a {
+    color: white;
+}
+
+.who-am-i-description img {
+    display: inline;
+    height: 24px;
+}
+
+.what-do-i-do {
+    margin: 50px;
+}
+
+.what-do-i-do-contents {
+    margin-top: 30px;
+}
+
+.what-do-i-do-contents h3 {
+    color: #EDAD2A;
+}
+
+.talks-pictures {
+    margin-top: 30px;
+}
+
+.talks-pictures img {
+    height: 200px;
+    margin-top: 10px;
+}
+
+.talks {
+    margin-top: 20px;
+}
+
+.what-can-i-offer {
+    background-color: #F5AB35;
+    display: block;
+    padding: 30px;
+    width: 100%;
+    color: #f0f0f0;
+}
+
+.what-can-i-offer-item-container {
+    margin-top: 30px;
+    color: white; 
+}
+
+.what-can-i-offer-item-container .offer-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.what-can-i-offer-item-container img {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.what-can-i-offer-item-container p {
+    color: white;
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
