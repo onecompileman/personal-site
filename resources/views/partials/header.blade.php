@@ -15,7 +15,7 @@
                     <a href="/skills" class="@if($_SERVER['REQUEST_URI'] == '/skills') active @endif">Skills</a>
                 </li>
                 <li>
-                    <a href="/">Blogs</a>
+                    <a href="/blogs" class="@if($_SERVER['REQUEST_URI'] == '/skills') active @endif">Blogs</a>
                 </li>
                 <li>
                     <a href="/">Portofolio</a>

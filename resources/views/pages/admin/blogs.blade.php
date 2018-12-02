@@ -7,6 +7,12 @@
                 <i class="fa fa-plus" style="color: white;"></i>
             </a>
         </h4>
+        @if(Session::has('alert.message'))
+            <div class="alert alert-success alert-dismissible">
+                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                 <strong>Success!</strong> {{ Session::get('alert.message') }}
+            </div>
+        @endif
         <hr>
         <table class="table table-striped">
             <thead>
@@ -18,25 +24,24 @@
               </tr>
             </thead>
             <tbody>
+                @foreach($blogs as $blog)
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ $blog->created_at }}</td>
+                    <td>{{ $blog->title }}</td>
+                    <td>{{ ($blog->is_published)? 'Published' : 'Not Yet' }}</td>
                     <td>
-                        <div class="btn btn-primary" title="View">
-                            <i class="fa fa-eye"></i>
-                        </div>
-                        <div class="btn btn-info" title="Edit">
-                            <i class="fa fa-edit"></i>
-                        </div>
-                        <div class="btn btn-success" title="Publish">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <div class="btn btn-danger" title="Delete">
+                        <a href="{{ route('blog', ['id' => $blog->id]) }}" class="btn btn-primary" title="View">
+                            <i class="fa fa-eye" style="color: white;"></i>
+                        </a>
+                        <a href="{{ route('blog-edit', ['id' => $blog->id]) }}" class="btn btn-info" title="Edit">
+                            <i class="fa fa-edit" style="color: white;"></i>
+                        </a>
+                        <div class="btn btn-danger" title="Delete" onclick="if(confirm('Are you sure to delete blog entitled {{ $blog->title }}?')) window.location.pathname = '/admin/blogs/{{$blog->id}}/delete'">
                             <i class="fa fa-trash"></i>
                         </div>
                     </td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

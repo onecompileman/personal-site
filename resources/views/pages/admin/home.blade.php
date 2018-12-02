@@ -6,7 +6,7 @@
         <div class="col-md-3">
             <div class="panel">
                 <ul class="list-group">
-                    <li class="list-group-item active"><a>Blogs</a></li>
+                    <li class="list-group-item active"><a href="/admin/blogs">Blogs</a></li>
                     <li class="list-group-item"><a>Projects</a></li>
                     <li class="list-group-item"><a>Contacts Inquiry</a></li>
                 </ul>

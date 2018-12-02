@@ -14,21 +14,24 @@
     <!-- Core build with no theme, formatting, non-essential modules -->
     <link href="//cdn.quilljs.com/1.3.6/quill.core.css" rel="stylesheet">
     <!-- Custom Theme files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/about.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/skills.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/contacts.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/about.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/skills.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/contacts.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/blogs.css" type="text/css" rel="stylesheet" media="all">
     <!-- nav -->
-    <link href="css/menufullpage.css" rel="stylesheet">
+    <link href="/css/menufullpage.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="vendor/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/lightbox/css/lightbox.min.css">
     <!-- font-awesome icons -->
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet">
     <!-- //Custom Theme files -->
     <!-- online-fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+
+   @yield('head')
     <!-- //online-fonts -->
 </head>
 
@@ -64,7 +67,7 @@
 
     <script src="//cdn.quilljs.com/1.3.6/quill.core.js"></script>
     
-    
+    @yield('scripts')
 </body>
 
 </html>

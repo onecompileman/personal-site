@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         "I'm currently a Team Leader",
         "I do Front end Development",
         "I love to conduct talks and seminars",
-        "Also joining hackathons"
+        "And join hackathons"
     ];
 
     // type one text in the typwriter
