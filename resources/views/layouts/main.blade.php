@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="Stephen Vinuya, Team Leader, Web Developer" />
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
+ 
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
+    <!-- Theme included stylesheets -->
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
+    <!-- Core build with no theme, formatting, non-essential modules -->
+    <link href="//cdn.quilljs.com/1.3.6/quill.core.css" rel="stylesheet">
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/about.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/skills.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/contacts.css" type="text/css" rel="stylesheet" media="all">
     <!-- nav -->
     <link href="css/menufullpage.css" rel="stylesheet">
 
@@ -59,6 +59,12 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
 
     <script src="{{ asset('vendor/lightbox/js/lightbox.min.js') }}"></script>
+
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <script src="//cdn.quilljs.com/1.3.6/quill.core.js"></script>
+    
+    
 </body>
 
 </html>

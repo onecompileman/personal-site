@@ -21,7 +21,7 @@
                     <a href="/">Portofolio</a>
                 </li>
                 <li>
-                    <a href="/contact">contact</a>
+                    <a href="/contact-me"  class="@if($_SERVER['REQUEST_URI'] == '/contact-me') active @endif">contact</a>
                 </li>
             </ul>
         </nav>

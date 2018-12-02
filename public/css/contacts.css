@@ -1,0 +1,30 @@
+.contact-me-container {
+    min-height: 100vh;
+}
+
+.contact-me-header {
+    padding: 30px;
+    width: 100%;
+    background-color: #232325;
+    color: white;
+    text-align: center; 
+}
+
+.contact-me-body {
+    margin-top: 50px;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.required {
+    color: red;
+}
+
+#contactSubmitBtn {
+    width: 240px;
+    background-color: #EDAD2A;
+    border: none;
+    float: right;
+}

@@ -17,7 +17,7 @@
                                 <a class="btn  text-white  scroll" href="portfolio.html">view my work </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn  text-white bg-dark scroll" href="contact.html">contact me</a>
+                                <a class="btn  text-white bg-dark scroll" href="{{ route('contact-me') }}">contact me</a>
                             </li>
                         </ul>
                     </div>

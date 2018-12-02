@@ -38,7 +38,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>What do I do?</h1>
+                    <h1>What I do?</h1>
                     <div class="what-do-i-do-contents">
                         <h3>Talks and Seminar</h3>
                         <p>Aside from coding, I love to conduct seminars and speaking engagement event to help aspiring developers in building their career</p>
@@ -132,8 +132,8 @@
         
     </div>
     <div class="what-can-i-offer">
-        <h1>What can I offer?</h1>
         <div class="what-can-i-offer-item-container container">
+            <h1>What can I offer?</h1>
             <div class="row">
                 <div class="col-md-4 col-sm-12 offer-item">
                     <h4>Hackathon Buddy</h4>
