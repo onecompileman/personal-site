@@ -9,7 +9,6 @@
             </div>
             <div class="col-md-6 col-sm-12">
             <form action="/blogs" method="GET">
-                {{ csrf_field() }}
                 <div class="md-input">
                 <input class="md-form-control" required="" type="text" name="search">
                 <span class="highlight"></span>
@@ -27,7 +26,7 @@
                              <h1>{{ $blog->title }}</h1>
                             <div class="blog-header">
                                 <div class="row">
-                                <div class="col-sm-2">
+                                <div class="col-sm-1">
                                     <img class="profile-img" src="/images/profile.png" alt="MY Profile">
                                 </div> 
                                 <div class="col-sm-9">
@@ -45,7 +44,7 @@
                         <div class="tags-container">
                             Tags: &nbsp;
                             @foreach(explode(',',$blog->tags) as $tag)
-                            <label class="label label-default" style="background-color: #edad29;padding:5px; color:white;margin:5px;">{{$tag}}</label>
+                            <a href="/blogs?search={{$tag}}" class="label label-default" style="background-color: #edad29;padding:5px; color:white;margin:5px;">{{$tag}}</a>
                             @endforeach
                         </div>
                         </div>

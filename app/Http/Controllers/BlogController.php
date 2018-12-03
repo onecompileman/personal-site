@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-
+use Illuminate\Support\Facades\Session;
 use App\Blog;
 
 
@@ -52,7 +52,7 @@ class BlogController extends Controller
             Storage::disk('public')->put('blog-images/'.$image_name, $data);
 
             $img->removeattribute('src');
-            $img->setattribute('src', 'blog-images/' .$image_name);
+            $img->setattribute('src', '/blog-images/' .$image_name);
         }
  
         $detail = $dom->savehtml();
@@ -114,7 +114,7 @@ class BlogController extends Controller
     public function destroy($id) 
     {
          Blog::where('id', $id)->delete();
-         $request->session()->flash('alert.message', 'Blog was deleted!');
+         Session::flash('alert.message', 'Blog was deleted!');
          return redirect('/admin');
     }
 }

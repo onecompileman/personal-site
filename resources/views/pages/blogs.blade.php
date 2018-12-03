@@ -9,7 +9,6 @@
             </div>
             <div class="col-md-6 col-sm-12">
             <form action="/blogs" method="GET">
-                {{ csrf_field() }}
                 <div class="md-input">
                 <input class="md-form-control" required="" type="text" name="search">
                 <span class="highlight"></span>

@@ -47,7 +47,7 @@ Route::resource('/contacts', 'ContactController');
 
 Auth::routes();
 
-Route::get('/admin', 'BlogController@index')->name('home');
+Route::get('/admin', 'BlogController@index')->name('blogs');
 
 Route::get('/admin/blogs-create', 'BlogController@create')->name('blog-create');
 
@@ -55,3 +55,8 @@ Route::post('/admin/blogs', 'BlogController@store')->name('blog-store');
 Route::get('/admin/blogs/{id}', 'BlogController@edit')->name('blog-edit');
 Route::put('/admin/blogs/{id}/update', 'BlogController@update')->name('blog-update');
 Route::get('/admin/blogs/{id}/delete', 'BlogController@destroy')->name('blog-delete');
+
+Route::get('/admin/projects', 'ProjectController@index')->name('projects');
+Route::get('/admin/projects/create', 'ProjectController@create')->name('project-create');
+Route::post('/admin/projects', 'ProjectController@store')->name('project-store');
+

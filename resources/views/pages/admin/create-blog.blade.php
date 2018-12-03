@@ -41,9 +41,11 @@
             </form>
         </div>
     </div>
-    <script>
-    setTimeout(function() {
-        $(document).ready(function () {
+@endsection
+
+@section('scripts')
+<script>
+     $(document).ready(function () {
           $('#summernote').summernote({
                             height: 300,                 // set editor height
                             minHeight: null,             // set minimum height of editor
@@ -51,7 +53,5 @@
                             focus: true                  // set focus to editable area after initializing summernote
            });
        });
-    }, 1000);
-    
-    </script>
+</script>
 @endsection
