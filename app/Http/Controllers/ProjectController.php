@@ -11,8 +11,10 @@ class ProjectController extends Controller
     {
         $data = $request->except(['_token']);
         $data['created_at'] = date('Y-m-d h:i:s');
-
+        unset($data['picture']);
         Project::insert($data);
+        $projects =  Project::orderBy('id', 'desc')->get();
+        Storage::disk('public')->put('project-images/' . $projects[0]->id . '.png',file_get_contents($request->file('picture')));
         $request->session()->flash('alert.message', 'Project entitled ' . $data['name'] . ' was created successfully!');
         return redirect('/admin/projects');
     }

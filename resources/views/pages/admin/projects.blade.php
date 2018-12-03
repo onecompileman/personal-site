@@ -27,7 +27,7 @@
                 @foreach($projects as $project)
                 <tr>
                     <td>{{ $project->created_at }}</td>
-                    <td>{{ $project->title }}</td>
+                    <td>{{ $project->name }}</td>
                     <td>{{ ($project->technologies) }}</td>
                     <td>
                         <a href="{{ route('blog', ['id' => $project->id]) }}" class="btn btn-primary" title="View">

@@ -5,7 +5,7 @@
         <div class="panel-body">
             <h4><a href="{{ route('projects') }}"><i class="glyphicon glyphicon-chevron-left"></i></a>&nbsp;Add Project</h4>
             <hr>
-            <form action="{{ route('blog-store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('project-store') }}" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
 
                 <div class="row">
@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12">
                         <label for="title">Technologies Used <b class="required">*</b></label>
-                        <input type="text" class="form-control" name="techonlogies" minlength="10" required>
+                        <input type="text" class="form-control" name="technologies" minlength="10" required>
                     </div>
                 </div><br><br>
                 <div class="row">
